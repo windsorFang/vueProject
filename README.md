@@ -1,2 +1,2 @@
 # vueProject
-keyboard mapping using vue,for test
+using vue,for test

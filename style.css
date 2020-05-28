@@ -1,0 +1,19 @@
+#app{
+    margin-top: 0px;
+    background-color: grey;
+}
+
+span{
+    background-color: red;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    margin: 10px 0;
+}
+.changeColor span{
+    background-color: green;
+}
+.changeLength span:after{
+    content: "length";
+    margin-left: 10px;
+}

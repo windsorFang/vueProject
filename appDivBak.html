@@ -1,0 +1,35 @@
+<div id="app">
+    
+    <h1>{{ name }}</h1>
+    <h2>{{ job }}</h2>
+    <span>{{ this.greet() }}</span>
+    <a @click.prevent="alert" :href="website">website</a>
+    <button @click="add">+</button>
+    <input type="text" :value="text">
+    <br>
+    <label for="">姓名</label>
+   
+    <!-- 鼠标事件,点击enter时触发 -->
+    <input type="text" @keyup.enter="logName">
+    <label for="">年龄</label>
+    <input type="text" @keyup.enter="logAge">
+    <br>
+    <button @click="a++">addA</button>
+    <button @click="b++">addB</button>
+    <p>A={{a}}</p>
+    <p>B={{b}}</p>
+    <!-- 在{{}}中的方法需要加小括号，在属性中的方法不用。 -->
+    <!-- 当使用计算属性时，不属于方法 -->
+    <p>addA={{ addA }}</p>
+    <p>addB={{ addB }}</p>
+
+    <div :class="compClass">
+        <!-- 点击事件改变data属性状态 -->
+        <button @click="colorTrigger = !colorTrigger" >changeColor</button>
+        <button @click="lengthTrigger = !lengthTrigger">changeLength</button>
+        <!-- class样式传入一个对象，可以是多个样式，对象可以放到computed中 -->
+        <span>我哭了</span>
+    </div>
+    <button @click="clickMethod">点我点我点我</button>
+    <p>LETME</p>
+</div>

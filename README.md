@@ -1,2 +1,2 @@
 # vueProject
-using vue,for test
+using vue for test
